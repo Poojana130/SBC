@@ -1,0 +1,321 @@
+.Labs
+{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+.labsbg
+{
+     background-image: url(../assets/images/Aboutus.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100%;
+display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+
+.labsbg h3{
+     font-size: 64px;
+font-family:"Roboto",sans-serif;
+font-weight: 700;
+word-wrap: break-word;
+padding: 20px;
+}
+
+.labsbg p{
+          font-size: 28px;
+font-family:"Roboto",sans-serif;
+font-weight: 500;
+word-wrap: break-word;
+line-height: 1.2;
+width: 100vh;
+}
+.pbtns
+{
+     gap:50px;
+     display: flex;
+     padding: 30px;
+}
+
+.pbtns .ex{
+      color: #ffffff;
+font-size: 18px;
+font-family: "Roboto",sans-serif;
+font-weight: 600;
+word-wrap: break-word;
+     padding: 20px;
+     border-radius: 8px;
+     background-color: #5F117C;
+      align-items: center;
+  justify-content: center;
+display: flex;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.pbtns .ex:hover{
+     transform: scale(1.05);
+     background-color: #651582;
+}
+
+.pbtns .cu
+{  
+     background-color: #FFFFFF54;
+    border: 1px solid #ffffff;
+       padding: 20px;
+       color: #ffffff;
+       display: flex;
+         border-radius: 8px;
+font-size: 18px;
+font-family:"Roboto",sans-serif;
+font-weight: 600;
+word-wrap: break-word;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.cu:hover{
+       background-color: rgba(255,255,255,0.3);
+  transform: scale(1.05);
+}
+
+.labfeature
+{
+     padding: 50px;
+}
+.labfea
+{
+     padding: 20px;
+     display: flex;
+     gap: 20px;
+     height: fit-content;
+     width: fit-content;
+    
+}
+.labfeabox
+{
+   
+ 
+   align-items: flex-start;
+   background:  radial-gradient(ellipse 111.49% 159.46% at 7.99% -3.28%, rgba(95, 17, 124, 0.27) 3%, #E9AEFF 47%, rgba(134, 101, 147, 0.36) 81%);
+   box-shadow: 0px 4px 39px rgba(243, 243, 243, 0.18);
+  border-radius: 15px;
+  text-align: left;
+  padding:30px;
+  min-height: 300px;
+  width: 900px;
+  transition: transform 0.2s ease-in-out;
+  
+}
+.labfeabox h3{
+     color: #5F117C;
+font-size: 64px;
+font-family: "Roboto",sans-serif;
+font-weight: 600;
+word-wrap: break-word;
+}
+.labfeabox p{
+     color: #5E5B5B;
+font-size: 28px;
+font-family: "Roboto",sans-serif;
+font-weight: 500;
+word-wrap: break-word;
+line-height: 1.2;
+}
+
+.labfea h2{
+     color: #5F117C;
+font-size: 40px;
+font-family: "Roboto",sans-serif;
+font-weight: 600;
+word-wrap: break-word;
+}
+
+.labfeaboxd
+{
+     display: flex;
+     padding: 10px;
+}
+.labfeaboxd ul{
+     list-style-type: none;
+}
+.labfeaboxd ul li
+{
+     padding: 10px;
+}
+.labfeaboxd ul li button{
+     background-color: #ffffff;
+     color: #5F117C;
+font-size: 28px;
+font-family: "Roboto",sans-serif;
+font-weight: 500;
+word-wrap: break-word;
+padding: 10px;
+border: none;
+border-radius: 8px;
+}
+
+.stardiv
+{
+     display: flex;
+     gap: 10px;
+}
+.stardiv ul{
+     list-style-type: none;
+     padding: 20px;
+
+   
+}
+.stardiv ul li 
+{
+     color: #5F117C;
+font-size: 22px;
+font-family: "Roboto",sans-serif;
+font-weight: 600;
+line-height: 1.6;
+word-wrap: break-word;
+}
+
+.labsend
+{
+     padding: 20px;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+.labsend h3{
+     color: #5F117C;
+font-size: 64px;
+font-family: "Roboto",sans-serif;
+font-weight: 700;
+word-wrap: break-word;
+}
+.labsend p{
+     color: #5F117C;
+font-size: 28px;
+font-family: "Roboto",sans-serif;
+font-weight: 500;
+word-wrap: break-word;
+}
+.softbox
+{
+     padding:10px 80px 30px 80px;
+     display: flex;
+     gap: 30px;
+}
+.softbox .tools
+{
+      /* background: radial-gradient(ellipse 72.36% 72.36% at 50.00% 27.64%, rgba(245.43, 219.69, 255, 0.36) 72%, rgba(232.94, 173.60, 255, 0.36) 100%); */
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* keep consistent stacking */
+  align-items: center; 
+  text-align: center;
+  padding: 20px;
+  border-radius: 34px;
+  border: 1px solid #5F117C;
+  background: linear-gradient(to bottom, #f9e6ff, #fcecff);
+  width: 500px;  
+  height: 300px; /* fixed height for equal alignment */
+         
+}
+.tools img{
+     padding: 20px;
+     height: 130px;
+     width: 300px;
+}
+.tools h3{
+     color: #5F117C;
+font-size: 40px;
+font-family: "Roboto",sans-serif;
+font-weight: 700;
+word-wrap: break-word;
+margin: 0;
+}
+.tools p{
+     color: #5F117C;
+font-size: 20px;
+font-family: "Roboto",sans-serif;
+font-weight: 500;
+word-wrap: break-word;
+margin: 5px 0 0 0;
+}
+.labsetup
+{
+     padding: 50px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+.labsetup h2{
+     color: #5F117C;
+font-size: 64px;
+font-family: "Roboto",sans-serif;
+font-weight: 700;
+word-wrap: break-word;
+}
+.labset{
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: row;
+     gap: 220px;
+
+}
+.labset h3{
+     color: #5F117C;
+font-size: 40px;
+font-family: "Roboto",sans-serif;
+font-weight: 700;
+word-wrap: break-word;
+line-height: 1.6;
+}
+.labset p{
+     color: #5F117C;
+font-size: 28px;
+font-family: "Roboto",sans-serif;
+font-weight: 400;
+word-wrap: break-word;
+text-align: left;
+max-width: 70vh;
+line-height: 1.6;
+}
+.labset1
+{
+     text-align: left;
+     padding: 50px;
+}
+.setup{
+
+
+
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 20px 0 50px 0;
+
+     
+}
+.setup button
+{
+     background: #5F117C;
+     color: #ffffff;
+font-size: 18px;
+font-family: "Roboto",sans-serif;
+font-weight: 600;
+word-wrap: break-word;
+ padding: 20px;
+  border-radius: 8px;
+  border: none;
+  width:350px;
+    box-shadow: 20px 20px 20px rgba(161, 100, 182, 0.8);
+    transition: transform 0.2s;
+}
+.setup button:hover{
+     
+     transform: scale(1.05);
+}

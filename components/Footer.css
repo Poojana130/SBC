@@ -1,0 +1,224 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #5F117C;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+.foot{
+  margin-top: 0px;
+  padding-top: 0px;
+ background-color: #5F117C;
+   display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 500%;
+    width: 100%;
+}
+.foot .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+.foot .logo{
+margin-bottom: 30px;
+padding-left: 40px;
+padding-top: 20px;
+height:200px;
+width: 300px;
+}
+
+.foot p{
+  margin-top: -5vh;
+  padding-left: 40px;
+  text-align: justify;
+  color: #ffffff;
+   font-size: 24px;
+    font-weight: 400 ;
+    word-wrap: break-word;
+    padding-top: 10px;
+}
+
+.foot h4{
+   font-size: 40px;
+   font-weight: 600;
+    word-wrap: break-word;
+    padding-top: 40px;
+}
+.foot ul li{
+  list-style-type: none;
+  text-align: justify;
+  padding-top: 8px;
+   font-size: 24px;
+   font-weight: 400;
+    word-wrap: break-word;
+}
+
+#copy-right
+{
+   background-color: #5F117C;
+   font-size: 20px;
+   font-weight: 400;
+    word-wrap: break-word;
+    padding: 20px;
+    text-align: center;
+} */
+
+/* ================= Base Styles ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5F117C;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #5F117C;
+  width: 100%;
+}
+
+.foot .col {
+  flex: 1 1 220px; /* auto shrink/grow */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 15px;
+  min-width: 200px; /* prevents columns shrinking too much */
+}
+
+.foot .logo {
+  height: auto;
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.foot p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 10px;
+  line-height: 1.4;
+  text-align: left;
+  max-width: 400px;
+}
+
+.foot h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.foot ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.foot ul li a{
+  font-size: 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.foot ul li a:hover {
+  color: #ffd700; /* gold hover effect */
+}
+
+#copy-right {
+  background-color: #5F117C;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ================== Responsive ================== */
+
+/* Tablet (up to 1024px) */
+@media (max-width: 1024px) {
+  .foot {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .foot .col {
+    align-items: center;
+    margin: 20px;
+  }
+
+  .foot p {
+    text-align: left;
+    line-height: 1.2;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .foot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foot .col {
+    margin: 15px 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foot .logo {
+    width: 150px;
+  }
+
+  .foot h4 {
+    font-size: 18px;
+  }
+
+  .foot ul li,
+  .foot p {
+    font-size: 16px;
+  }
+
+  #copy-right {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+  .foot .logo {
+    width: 120px;
+  }
+
+  .foot h4 {
+    font-size: 16px;
+  }
+
+  .foot ul li {
+    font-size: 12px;
+  }
+
+  .foot p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
+

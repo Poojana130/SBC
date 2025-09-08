@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  background-image: url("../assets/images/contact us.png"); /* better rename to contact-us.png */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.contact h3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.contact p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* Contact Info Boxes */
+.contact1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(
+    ellipse 72.36% 72.36% at 50% 27.64%, 
+    rgba(245, 219, 255, 0.36) 72%, 
+    rgba(233, 174, 255, 0.36) 100%
+  );
+  border-radius: 15px;
+  border: 1px #5F117C solid;
+  text-align: center;
+  padding: 20px;
+  min-height: 200px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.phone {
+  width: 53px;
+  height: 53px;
+  margin-bottom: 15px;
+}
+
+.p1 {
+  color: #5F117C;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.p2, .p3 {
+  color: #5F117C;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.p2 {
+  text-decoration: underline;
+}
+
+/* Form Section Heading */
+.formout h3 {
+  font-size: 2rem;
+  color: #5F117C;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.formout p {
+  text-align: center;
+  color: #5F117C;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8ebff, #f1dbff);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* makes inputs stack on small screens */
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #5F117C;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #7a0fa3;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #5F117C;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #7a0fa3;
+}
+
+/* Status Message */
+.status-msg {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color:#7a0fa3;
+}
+
+/* 📱 RESPONSIVE BREAKPOINTS */
+@media (max-width: 900px) {
+  .contact h3 {
+    font-size: 2.5rem;
+  }
+  .contact p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 80px 15px;
+    margin-top: -20px;
+  }
+  .contact h3 {
+    font-size: 2rem;
+  }
+  .contact p {
+    font-size: 0.9rem;
+  }
+  .formout h3 {
+    font-size: 1.5rem;
+  }
+  .formout p {
+    font-size: 1rem;
+  }
+  .submit-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
